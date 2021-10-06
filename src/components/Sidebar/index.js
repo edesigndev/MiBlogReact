@@ -12,7 +12,9 @@ const Sidebar = (props) => {
   }, [posts]);
 
   return (
-    <div className="sidebarContainer">
+    <div className="sidebarContainer" style={{
+      width: props.width
+    }}>
       <Card
         style={{
           marginBottom: "20px",

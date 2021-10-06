@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import blogPost from "../../data/blog.json";
+import Card from "../UI/Card";
 
 import "./style.css";
 
@@ -17,17 +18,22 @@ const BlogPost = (props) => {
     setpost(post);
   }, [post, props.match.params.slug]);
 
+  if (post.image === "") return null;
+
   return (
-    <div>
-      <div className="blogHeader">
-        <span>Publicado por: {post.author}</span>
-      </div>
-      <div className="postImageContainer">
-        <img src={post.image} alt=""></img>
-      </div>
-      <div className="postContent">
-        <span>{post.text}</span>
-      </div>
+    <div className="blogPostContainer">
+      <Card>
+        <div className="blogHeader">
+          <span>Publicado por: {post.author}</span>
+        </div>
+        <div className="postImageContainer">
+          <img src={post.image} alt=""></img>
+        </div>
+        <div className="postContent">
+          <span>{post.text}</span>
+        </div>
+      </Card>
+
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../UI/Card";
+import Card from "../../components/UI/Card";
 import blogData from "../../data/blog.json";
 import ImageGallery from "./imageGallery";
-import RecentsPosts from "../RecentsPosts";
-import Layout from "../Layout";
+import RecentsPosts from "../../pages/Home/RecentsPosts/";
+import Layout from "../../components/Layout";
 const Home = () => {
   const galleryHeight = 450;
   const galleryStyle = {

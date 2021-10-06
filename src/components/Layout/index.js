@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar";
 const Layout = (props) => {
   return (
     <div>
-      <div>
+      <div className="container">
         {props.children}
         <Sidebar></Sidebar>
       </div>

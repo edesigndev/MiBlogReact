@@ -3,23 +3,18 @@ import "./style.css";
 
 const Header = (props) => {
   return (
-    <div>
-      <Header className="header">
-        <nav className="headerMenu">
-          <a href="!#">Inicio</a>
-        </nav>
-        <nav className="headerMenu">
-          <a href="!#">Nosotros</a>
-        </nav>
-        <nav className="headerMenu">
-          <a href="!#">Post</a>
-        </nav>
-        <nav className="headerMenu">
-          <a href="!#">Contactenos</a>
-        </nav>
-      </Header>
-    </div>
-  );
+    <header className="header">
+      <nav className="headerMenu">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de nosotros</a>
+        <a href="#">Publicaciones</a>
+        <a href="#">Contáctenos</a>
+      </nav>
+      <div>
+        Redes Sociales
+      </div>
+    </header>
+  )
 };
 
 export default Header;
