@@ -17,13 +17,13 @@ const ImageGallery = (props) => {
           <img src={props.imgArray[1]} alt="jeje"></img>
         </div>
       </section>
-      <section className="sideImageWrapper" style={{ width: props.smallWitdh }}>
-        {props.imgArray.map((imageUrl) => (
+      <section className={"sideImageWrapper"} style={{ width: props.smallWitdh }}>
+        {props.imgArray.map((imageUrl, indexImage) => (
           <SideImage
-            key={props.imageUrl}
+            key={indexImage}
             height={props.sideImageHeigth}
             src={imageUrl}
-            alt="hola"
+            alt=""
           />
         ))}
       </section>

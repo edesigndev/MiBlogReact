@@ -22,7 +22,7 @@ const BlogPost = (props) => {
 
   return (
     <div className="blogPostContainer">
-      <Card>
+      <Card style={{ padding: "20px 0" }}>
         <div className="blogHeader">
           <span>Publicado por: {post.author}</span>
         </div>

@@ -28,7 +28,7 @@ const NavBar = () => {
           <NavLink to="/contactenos"> Contactenos </NavLink>
         </li>
       </ul>
-      <div>
+      <div className="search">
         <form>
           <input
             type="text"

@@ -4,10 +4,12 @@ import blogData from "../../data/blog.json";
 import ImageGallery from "./imageGallery";
 import RecentsPosts from "../../pages/Home/RecentsPosts/";
 import Layout from "../../components/Layout";
+
+import './style.css';
 const Home = () => {
   const galleryHeight = 450;
   const galleryStyle = {
-    height: `${galleryHeight}px`,
+    height: galleryHeight + 'px',
     overflow: "hidden",
   };
 
