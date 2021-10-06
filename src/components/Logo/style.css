@@ -1,0 +1,10 @@
+.logo {
+  text-align: center;
+}
+
+.logo span {
+  text-decoration: none;
+  font-family: "Trebuchet MS";
+  font-size: 50px;
+  color: blue;
+}
